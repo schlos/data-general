@@ -1,0 +1,5 @@
+﻿<http://datadock.io/schlos/data-general/id/dataset/publisher> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Organization> <http://datadock.io/schlos/data-general/metadata>.
+<http://datadock.io/schlos/data-general/id/dataset/publisher> <http://www.w3.org/2000/01/rdf-schema#label> "Code for Croatia" <http://datadock.io/schlos/data-general/metadata>.
+<http://datadock.io/schlos/data-general/id/dataset/publisher> <http://xmlns.com/foaf/0.1/homepage> <http://codeforcroatia.org/> <http://datadock.io/schlos/data-general/metadata>.
+<http://datadock.io/schlos/data-general/id/dataset/publisher> <http://xmlns.com/foaf/0.1/mbox> "hi@codeforcroatia.org" <http://datadock.io/schlos/data-general/metadata>.
+<http://datadock.io/schlos/data-general/id/dataset/publisher> <http://xmlns.com/foaf/0.1/name> "Code for Croatia" <http://datadock.io/schlos/data-general/metadata>.

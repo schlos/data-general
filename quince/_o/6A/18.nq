@@ -1,0 +1,2 @@
+﻿<http://datadock.io/schlos/data-general/id/resource/convertcsv%20(8).csv/row_1124> <http://datadock.io/schlos/data-general/id/definition/id> "1124"^^<http://www.w3.org/2001/XMLSchema#integer> <http://datadock.io/schlos/data-general/id/dataset/convertcsv%20(8).csv>.
+<http://datadock.io/schlos/data-general/id/resource/convertcsv%20(8).csv/row_7046> <http://datadock.io/schlos/data-general/id/definition/prijavljeno> "1124"^^<http://www.w3.org/2001/XMLSchema#integer> <http://datadock.io/schlos/data-general/id/dataset/convertcsv%20(8).csv>.

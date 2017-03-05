@@ -1,0 +1,2 @@
+﻿<http://datadock.io/schlos/data-general/id/resource/convertcsv%20(8).csv/row_1518> <http://datadock.io/schlos/data-general/id/definition/id> "1518"^^<http://www.w3.org/2001/XMLSchema#integer> <http://datadock.io/schlos/data-general/id/dataset/convertcsv%20(8).csv>.
+<http://datadock.io/schlos/data-general/id/resource/convertcsv%20(8).csv/row_2814> <http://datadock.io/schlos/data-general/id/definition/razrijeseno> "1518"^^<http://www.w3.org/2001/XMLSchema#integer> <http://datadock.io/schlos/data-general/id/dataset/convertcsv%20(8).csv>.
