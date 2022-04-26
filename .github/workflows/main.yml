@@ -17,6 +17,8 @@ jobs:
           ref: ${{ github.head_ref }}
           
       # Load current date
+      # https://github.com/marketplace/actions/current-time
+      # alt: https://github.com/marketplace/actions/current-time-2
       - name: Get current time
         uses: gerred/actions/current-time@master
         id: current-time
