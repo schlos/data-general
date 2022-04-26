@@ -28,7 +28,7 @@ jobs:
         with:
           url: 'http://tjv.pristupinfo.hr/?sort=1&page=1&download'
           imagePath: 'tjv-datasets/tjv-snapshot-${{ steps.current-time.outputs.time }}.csv'
-          requiredContentType: 'text/csv; charset=utf-8'
+          requiredContentType: 'text/csv'
 
       # If you do not commit the changes, then the action does not work
       - name: "Commit changes if necessary"
