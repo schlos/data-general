@@ -3,7 +3,7 @@ on: [push]
 jobs:
   update_wakatime_image:
     runs-on: ubuntu-latest
-    name: Save wakatime stats to file
+    name: Save test image to media folder
     steps:
       # This is required to use the git-auto-commit-action
       - uses: actions/checkout@v2
@@ -11,19 +11,19 @@ jobs:
           ref: ${{ github.head_ref }}
 
       # Load and cache the image
-      - name: Save my WakaTime stats to my repo
+      - name: Save some Test image to my repo
         uses: Minituff/save-image@v1.3
         id: wakatime
         with:
-          url: 'https://minituff-github-readme-stats.vercel.app/api/wakatime?username=minituff&langs_count=18&layout=compact&custom_title=My%20Code%20Stats'
-          imagePath: 'media/wakatime-data.svg'
-          requiredContentType: 'image/svg+xml; charset=utf-8'
+          url: 'https://tesse.io/cache/courses/test-pm3cuca3xm/1609675620050-test-980x980.jpeg'
+          imagePath: 'media/test-data.jpeg'
+          #requiredContentType: 'image/svg+xml; charset=utf-8'
 
       # If you do not commit the changes, then the action does not work
       - name: "Commit changes if necessary"
         uses: stefanzweifel/git-auto-commit-action@v4.13.1
         with:
-          commit_message: Updating media/wakatime-data.svg
+          commit_message: Updating media/filename
           commit_user_name: github-actions[bot]
           commit_user_email: github-actions[bot]@users.noreply.github.com
           commit_author: Author <github-actions[bot]@users.noreply.github.com>
