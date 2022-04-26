@@ -16,10 +16,10 @@ jobs:
         id: current-time
         
       # Display current time
-      - name: Use current time
-        env:
-          TIME: "${{ steps.current-time.outputs.time }}"
-        run: echo $TIME
+      #- name: Use current time
+      #  env:
+      #    TIME: "${{ steps.current-time.outputs.time }}"
+      #  run: echo $TIME
 
       # Load and cache the image
       - name: Save tjv csv snapshot to my repo
@@ -28,7 +28,7 @@ jobs:
         with:
           url: 'http://tjv.pristupinfo.hr/?sort=1&page=1&download'
           imagePath: 'tjv-datasets/tjv-snapshot-${{ steps.current-time.outputs.time }}.csv'
-          requiredContentType: "text/csv"
+          #requiredContentType: 'text/csv'
 
       # If you do not commit the changes, then the action does not work
       - name: "Commit changes if necessary"
