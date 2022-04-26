@@ -1,0 +1,32 @@
+name: 'Save image'
+description: 'Saves an image from an URL to a path'
+author: 'James Tufarelli - Minituff'
+
+inputs:
+  url:
+    description: 'The URL of the image to save'
+    required: true
+    default: 'World'
+  imagePath:
+    description: 'The relative path where the image should be saved'
+    required: true
+    default: '.'
+  deleteOnFail:
+   description: 'Delete the image if it fails to load'
+   required: false
+  requiredContentType:
+   description: 'Require a certain content type or the image will be rejected. Case sensitive'
+   required: false
+   default: ''
+
+outputs:
+  imageLoaded:
+    description: 'boolean - Did the image load or not?'
+
+runs:
+  using: 'node16'
+  main: 'dist/index.js'
+  
+branding:
+  icon: image
+  color: orange
