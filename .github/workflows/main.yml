@@ -1,4 +1,10 @@
-on: [push]
+# The schedule event allows you to trigger a workflow at a scheduled time.
+# You can schedule a workflow to run at specific UTC times using POSIX cron syntax. 
+# https://docs.github.com/en/actions/using-workflows/events-that-trigger-workflows#schedule
+on:
+  schedule:
+    # * is a special character in YAML so you have to quote this string
+    - cron:  '0 6 20 * *'
 
 jobs:
   update_wakatime_image:
