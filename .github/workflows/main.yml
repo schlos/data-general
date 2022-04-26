@@ -9,6 +9,17 @@ jobs:
       - uses: actions/checkout@v2
         with:
           ref: ${{ github.head_ref }}
+          
+      # Load current date
+      - name: Get current time
+        uses: gerred/actions/current-time@master
+        id: current-time
+        
+      # Display current time
+      - name: Use current time
+        env:
+          TIME: "${{ steps.current-time.outputs.time }}"
+        run: echo $TIME
 
       # Load and cache the image
       - name: Save tjv csv snapshot to my repo
@@ -16,7 +27,7 @@ jobs:
         id: wakatime
         with:
           url: 'http://tjv.pristupinfo.hr/?sort=1&page=1&download'
-          imagePath: 'media/tjv-snapshot.csv'
+          imagePath: 'tjv-dataset/tjv-snapshot.csv'
           #requiredContentType: 'image/svg+xml; charset=utf-8'
 
       # If you do not commit the changes, then the action does not work
